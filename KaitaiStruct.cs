@@ -14,10 +14,17 @@ namespace Kaitai
             }
         }
 
+        public KaitaiStruct()
+        {
+
+        }
+
         public KaitaiStruct(KaitaiStream io)
         {
             m_io = io;
         }
+
+        public abstract byte[] ToByteArray();
     }
 
     /// <summary>
